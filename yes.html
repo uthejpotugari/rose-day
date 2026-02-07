@@ -4,8 +4,24 @@
 <meta charset="UTF-8">
 <title>For You 💖</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
+  .floating-name {
+  position: fixed;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  color: #ff4d6d;
+  font-weight: bold;
+  animation: floatName 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes floatName {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
 body {
   margin: 0;
   height: 100vh;
@@ -29,9 +45,8 @@ p {
 }
 </style>
 </head>
-
 <body>
-
+<div class="floating-name">💖 Pandu 💖</div>
 <div>
   <h1>You just made me the happiest person 💖</h1>
   <p>I promise to keep giving you reasons to smile 🌹</p>
