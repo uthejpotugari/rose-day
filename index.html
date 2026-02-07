@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Happy Rose Day Pandu 🌹</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+<meta charset="UTF-8">
+<title>Happy Rose Day Pandu 🌹</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
 body {
   margin: 0;
   height: 100vh;
@@ -23,43 +24,68 @@ body {
 }
 
 img {
-  width: 160px;
+  width: 180px;
+  border-radius: 15px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  border-radius: 15px;
 }
 
 img:hover {
   transform: scale(1.05);
 }
+
 #message {
   display: none;
   margin-top: 20px;
   font-size: 18px;
   line-height: 1.6;
+  transition: opacity 0.8s ease;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 18px;
+  background: #e63946;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff4d5a;
 }
 </style>
-  <div class="card">
-<img src="rose.jpg" onclick="showMessage()" style="width:220px; border-radius:15px;">
-    <div id="message">
-      Hey Pandu 🌹<br><br>
-      This rose is for you,<br>
-      not because it’s perfect,<br>
-      but because it’s real — just like my feelings.<br><br>
-      You make my days softer,<br>
-      my smiles easier,<br>
-      and my heart calmer.<br><br>
-      So on this Rose Day,<br>
-      I just want to ask you one thing…<br><br>
-      <strong>Will you be mine? ❤️</strong><br>
-      <button onclick="location.href='yes.html'">Yes ❤️</button>
-    </div>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="rose.jpg" onclick="showMessage()">
+
+  <div id="message">
+    Hey Pandu 🌹<br><br>
+    This rose is for you,<br>
+    not because it’s perfect,<br>
+    but because it’s real — just like my feelings.<br><br>
+    You make my days softer,<br>
+    my smiles easier,<br>
+    and my heart calmer.<br><br>
+    So on this Rose Day,<br>
+    I just want to ask you one thing…<br><br>
+
+    <strong>Will you be mine? 💗</strong><br>
+    <button onclick="location.href='yes.html'">Yes 💖</button>
   </div>
-  
-    <script>
+</div>
+
+<script>
 function showMessage() {
   document.getElementById("message").style.display = "block";
 }
 </script>
+
 </body>
-</html> 
+</html>
