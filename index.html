@@ -5,56 +5,40 @@
   <title>Happy Rose Day Pandu 🌹</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: linear-gradient(180deg, #0b0000, #2a0000);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Poppins', sans-serif;
-      color: white;
-      text-align: center;
-    }
-    #message {
-  display: none;
-  transition: opacity 0.8s ease;
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(180deg, #0b0000, #2a0000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
 }
-    </style>
-    .card {
-      padding: 20px;
-      max-width: 360px;
-    }
-    img {
-      width: 160px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-  img:hover {
-    transform: scale(1.05);
+
+.card {
+  padding: 20px;
+  max-width: 360px;
+}
+
+img {
+  width: 160px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 #message {
-    display: none;
-    transition: opacity 0.8s ease;
-    margin-top: 20px;
-    font-size: 18px;
-    line-height: 1.6;
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
 }
-    button {
-      margin-top: 20px;
-      padding: 12px 28px;
-      font-size: 18px;
-      background: #e63946;
-      border: none;
-      border-radius: 25px;
-      color: white;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #ff4d5a;
-    }
-  </style>
-</head>
-<body>
+</style>
   <div class="card">
 <img src="rose.jpg" onclick="showMessage()" style="width:220px; border-radius:15px;">
     <div id="message">
