@@ -29,16 +29,16 @@
       width: 160px;
       cursor: pointer;
       transition: transform 0.3s ease;
-    }
-    img:hover {
-      transform: scale(1.05);
-    }
-    #message {
-      display: none;
-      margin-top: 20px;
-      font-size: 18px;
-      line-height: 1.6;
-    }
+  img:hover {
+    transform: scale(1.05);
+}
+#message {
+    display: none;
+    transition: opacity 0.8s ease;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
     button {
       margin-top: 20px;
       padding: 12px 28px;
@@ -71,11 +71,11 @@
       <button onclick="location.href='yes.html'">Yes ❤️</button>
     </div>
   </div>
-
-  <script>
-    function showMessage() {
-      <button onclick="location.href='yes.html'">Yes ❤️</button>
-    }
-  </script>
+  
+    <script>
+function showMessage() {
+  document.getElementById("message").style.display = "block";
+}
+</script>
 </body>
 </html> 
