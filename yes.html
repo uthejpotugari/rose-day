@@ -21,5 +21,24 @@
     <h1>You just made me the happiest person ❤️</h1>
     <p>I promise to keep giving you reasons to smile 🌹</p>
   </div>
+  <script>
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.innerHTML = "❤️";
+  heart.style.position = "fixed";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.top = "-20px";
+  heart.style.fontSize = "24px";
+  heart.style.animation = "fall 4s linear forwards";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 4000);
+}, 500);
+</script>
+
+<style>
+@keyframes fall {
+  to { transform: translateY(110vh); opacity: 0; }
+}
+</style>
 </body>
 </html>
